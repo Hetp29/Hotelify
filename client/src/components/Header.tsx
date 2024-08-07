@@ -1,12 +1,12 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className='bg-blue-700 py-4'>
-            <div className='max-w-7xl mx-auto flex justify-between items-center'>
-                <h1 className='text-4xl text-white font-extrabold tracking-wide'>
-                    <NavLink to="/" end className='hover:underline'>Hotelify.com</NavLink>
+        <header className="bg-blue-700 py-4">
+            <div className="max-w-7xl mx-auto flex justify-between items-center">
+                <h1 className="text-4xl text-white font-extrabold tracking-wide">
+                    <NavLink to="/" end className="hover:underline">Hotelify.com</NavLink>
                 </h1>
                 <nav>
                     <NavLink
@@ -18,8 +18,8 @@ const Header = () => {
                 </nav>
             </div>
         </header>
-    )
-}
+    );
+};
 export default Header;
 // import { Link } from "react-router-dom"
 
