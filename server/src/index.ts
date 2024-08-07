@@ -1,6 +1,9 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import "dotenv/config";
+import mongoose from 'mongoose';
+import mongodb from 'mongodb';
+mongoose.connect(process.env.MONGO_URL as string)
 
 const app = express(); //create express app
 app.use(express.json())
