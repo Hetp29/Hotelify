@@ -7,15 +7,15 @@ const DropDown = () => {
             <NavLink
                 to="/log-in"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                    Log In
-                </NavLink>
-                <NavLink
-                    to="/sign-up"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Sign Up
-                    </NavLink>
+            >
+                Log In
+            </NavLink>
+            <NavLink
+                to="/sign-up"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            >
+                Sign Up
+            </NavLink>
         </div>
     );
 };

@@ -1,7 +1,17 @@
-const Slogan = () => {
+import React from "react";
+
+interface SloganProps {
+    backgroundImage: string;
+}
+
+const Slogan: React.FC<SloganProps> = ({ backgroundImage }) => {
     return (
-        <div className="bg-blue-900 py-3">
-            <div className="container mx-auto flex flex-col gap-2">
+        <div
+            className="relative py-10 bg-cover bg-center bg-no-repeat transition-all duration-1000"
+            style={{ backgroundImage }}
+        >
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 opacity-60 transition-all duration-1000"></div>
+            <div className="container mx-auto flex flex-col items-center gap-4 text-center relative z-10">
                 <h1 className="text-5xl text-white font-bold">
                     Discover your perfect stay!
                 </h1>
