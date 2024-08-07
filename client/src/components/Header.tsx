@@ -9,9 +9,9 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <header className="bg-blue-700 py-4">
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
-                <h1 className="text-4xl text-white font-extrabold tracking-wide">
+        <header className="bg-blue-900 py-3">
+            <div className=" max-w-7xl mx-auto flex justify-between items-center">
+                <h1 className="text-4xl  text-white font-extrabold tracking-wide">
                     <NavLink to="/" end className="hover:underline">Hotelify.com</NavLink>
                 </h1>
                 <div className="relative">
