@@ -17,16 +17,17 @@ const Layout = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // Change image every 5 seconds
+        }, 5000);
         return () => clearInterval(interval);
     }, [images.length]);
 
     const backgroundImage = images[currentImageIndex];
 
     return (
-        <div className='flex flex-col min-h-screen bg-gray-100'>
+        <div className='flex flex-col min-h-screen'>
             <Header backgroundImage={backgroundImage} />
             <Slogan backgroundImage={backgroundImage} />
+            <div className="flex-1 bg-gradient-to-b from-white to-gray-100"></div>
         </div>
     );
 };
